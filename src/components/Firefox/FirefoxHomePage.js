@@ -8,8 +8,6 @@ import {
   FaPlus,
   FaArrowLeft,
   FaArrowRight,
-  FaGoogle ,
-  FaInternetExplorer,
 } from "react-icons/fa";
 import firefoxLogo from "../../assets/icons/firefox.png";
 import settingsIcon from "../../assets/icons/settings.png";
@@ -18,26 +16,20 @@ import Google from "../../assets/icons/google.svg";
 import news1 from "../../assets/img/news1.webp";
 import news2 from "../../assets/img/news2.webp";
 import news3 from "../../assets/img/news3.webp";
-import news4 from "../../assets/img/news4.webp";
-import news5 from "../../assets/img/news5.webp";
-import news6 from "../../assets/img/news6.webp";
+import web from "../../assets/icons/web.svg";
 import "./FirefoxHomePage.css";
 
 const initialTabs = [{ id: 1, title: "New Tab" }];
 
 const bookmarks = [
-  { imgSrc: "path_to_hub_icon", alt: "hub.techbanda", link: "#" },
-  { imgSrc: "path_to_localhost_icon", alt: "localhost", link: "#" },
-  { imgSrc: "path_to_techbanda_icon", alt: "techbanda", link: "#" },
-  { imgSrc: "path_to_monesta_icon", alt: "monesta", link: "#" },
-  { imgSrc: "path_to_aws_icon", alt: "ap-south-1.com", link: "#" },
-  { imgSrc: "path_to_whoisdata_icon", alt: "whoisdata", link: "#" },
-  { imgSrc: "path_to_aapanel_icon", alt: "aapanel.techbanda", link: "#" },
-  {
-    imgSrc: "path_to_portal_icon",
-    alt: "portal2.passportindia.gov",
-    link: "#",
-  },
+  { imgSrc: web, alt: "hub.techbanda", link: "#" },
+  { imgSrc: web, alt: "localhost", link: "#" },
+  { imgSrc: web, alt: "techbanda", link: "#" },
+  { imgSrc: web, alt: "monesta", link: "#" },
+  { imgSrc: web, alt: "ap-south-1.com", link: "#" },
+  { imgSrc: web, alt: "whoisdata", link: "#" },
+  { imgSrc: web, alt: "aapanel.techbanda", link: "#" },
+  { imgSrc: web, alt: "portal2.passportindia.gov", link: "#" },
 ];
 
 const newsArticles = [
@@ -69,20 +61,12 @@ const newsArticles = [
 const FirefoxHomePage = ({ onClose }) => {
   const [isMaximized, setIsMaximized] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
-  const [prevPosition, setPrevPosition] = useState({ x: 0, y: 0 });
+  const [prevPosition, setPrevPosition] = useState({ x: 645, y: 1282 });
   const [tabs, setTabs] = useState(initialTabs);
-  const [nextTabId, setNextTabId] = useState(2); // Start with ID 2 for new tabs
+  const [nextTabId, setNextTabId] = useState(2);
 
   const handleMinimize = () => {
     setIsMinimized(true);
-    setPrevPosition({
-      x: document.querySelector(".firefox").style.left,
-      y: document.querySelector(".firefox").style.top,
-    });
-    document.querySelector(".firefox").style.left = "0px";
-    document.querySelector(".firefox").style.top = `${
-      window.innerHeight - 40
-    }px`;
   };
 
   const handleMaximize = () => {
@@ -91,8 +75,8 @@ const FirefoxHomePage = ({ onClose }) => {
 
   const handleRestore = () => {
     setIsMinimized(false);
-    document.querySelector(".firefox").style.left = prevPosition.x;
-    document.querySelector(".firefox").style.top = prevPosition.y;
+    document.querySelector(".firefox-homepage").style.left = prevPosition.x;
+    document.querySelector(".firefox-homepage").style.top = prevPosition.y;
   };
 
   const addNewTab = () => {
@@ -188,16 +172,18 @@ const FirefoxHomePage = ({ onClose }) => {
             <input type="text" placeholder="Search with Google or enter address" className="search-input" />
         </div>
         <div className="bookmarks">
-          {bookmarks.map((bookmark, index) => (
-            <a href={bookmark.link} key={index} className="bookmark">
-              <img
-                src={bookmark.imgSrc}
-                alt={bookmark.alt}
-                className="bookmark-icon"
-              />
-            </a>
-          ))}
+            {bookmarks.map((bookmark, index) => (
+                <a href={bookmark.link} key={index} className="bookmark">
+                <img
+                    src={bookmark.imgSrc}
+                    alt={bookmark.alt}
+                    className="bookmark-icon"
+                />
+                <span>{bookmark.alt}</span>
+                </a>
+            ))}
         </div>
+
         <div className="news-section">
           <h2>Thought-provoking stories</h2>
           <div className="news-articles">

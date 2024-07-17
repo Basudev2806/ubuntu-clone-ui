@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g id="Desktop" transform="translate(42 -60)">
+    <g id="folder-open-svgrepo-com" transform="translate(-42 60)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="512" height="512" fill="#fff"/>
+      <path id="Path_2" data-name="Path 2" d="M40.9,243.733H386.03a21.339,21.339,0,0,0,21.252-19.408l17.46-192.054A21.34,21.34,0,0,0,403.49,9H23.436A21.339,21.339,0,0,0,2.184,32.271L19.644,224.325A21.34,21.34,0,0,0,40.9,243.733Z" transform="translate(42.61 183.054)" fill="#70b2e8"/>
+      <path id="Rectangle_2" data-name="Rectangle 2" d="M11,0H376a11,11,0,0,1,11,11V38a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V11A11,11,0,0,1,11,0Z" transform="translate(61 154)" fill="#656b71"/>
+    </g>
+  </g>
+</svg>

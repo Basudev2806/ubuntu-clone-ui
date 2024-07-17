@@ -1,0 +1,246 @@
+.firefox-homepage {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1024px;
+    min-height: 500px;
+    overflow-y: hidden;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .firefox-homepage.maximized {
+    top: 50%;
+    left: 32%;
+    width: 95%;
+    height: 92%;
+    border-radius: 0;
+  }
+  
+  .firefox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-image: linear-gradient(
+      140deg,
+      #5c37ab 0%,
+      #ff96ab 50%,
+      #ed3c60 75%
+    );
+    border-bottom: 1px solid #555;
+    border-radius: 5px 5px 0 0;
+    user-select: none;
+  }
+  
+  .firefox-header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-image: linear-gradient(
+      140deg,
+      #5c37ab 0%,
+      #ff96ab 50%,
+      #ed3c60 75%
+    );
+    user-select: none;
+  }
+  
+  .firefox-header2-header-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .firefox-header-icons {
+    margin-right: 5px;
+  }
+  
+  .firefox-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .firefox-upper-middle {
+    color: #20123a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .firefox-upper-middle span {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+  
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  }
+  
+  .google-search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 600px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .selected-item {
+    display: flex;
+    align-items: center;
+    background-color: #edf4fd4d;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 5px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 110px;
+  }
+  
+  .firefox-new-tab {
+    margin-left: 5px;
+  }
+  
+  .header-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .close-new-tab {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .close-new-tab:hover {
+    color: #e74c3c;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .settings-icon {
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .bookmarks {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .bookmark {
+    display: block;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .bookmark-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .news-section {
+    margin: 20px;
+  }
+  
+  .news-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .news-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  
+  .news-article {
+    width: calc(100% - 30px);
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .news-content {
+    padding: 10px;
+  }
+  
+  .news-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .news-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .news-content span {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .footer {
+    color: black;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    color: #3498db; /* Blue color */
+    text-decoration: underline;
+  }
+  

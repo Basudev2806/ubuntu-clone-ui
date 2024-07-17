@@ -1,13 +1,13 @@
 .terminal {
     position: absolute;
-    background-color: #7d395533;
+    background-color: #000000;
     backdrop-filter: blur(10px);
     border: 1px solid #333;
     border-radius: 5px;
     z-index: 1000;
-    width: 400px;
+    width: 500px;
     max-width: calc(100% - 20px);
-    min-height: 200px;
+    min-height: 300px;
     cursor: move;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -68,7 +68,7 @@
   }
   
   .prompt {
-    color: #98c379;
+    color: #7fff23;
     user-select: none;
   }
   
